@@ -1,2 +1,321 @@
 @import "_nullstyle"; // Подключение файла ( обнуление стилей)
 
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../assets/fonts/ptsans-400.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../assets/fonts/ptsans-700.woff2") format("woff2");
+  font-display: swap;
+}
+
+body{
+  font-family: "PT Sans", sans-serif;
+  color: #000000;
+}
+
+.wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+}
+
+main {
+  flex:1 1 auto;
+
+}
+
+.container {
+  width: 1200px;
+  margin:0 auto;
+}
+.footer-container{
+  display: flex;
+  justify-content: space-between;
+  padding: 0 72px;
+
+}
+
+.button {
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background: #756257;
+  border-radius: 4px;
+}
+
+.secondary-button  {
+  font-size: 16px;
+  line-height: 20px;
+  width: 139px;
+  height: 70px;
+}
+
+.visually-hidden {
+//display: none;
+}
+
+.header {
+
+		&__nav {
+      display: flex;
+      width: 1060px;
+      margin: 0 auto;
+      justify-content: space-between;
+		}
+
+		&__logo {
+      width: 139px;
+      height: 70px;
+		}
+
+		&__menu {
+		}
+
+		&__item {
+		}
+
+		&__item--active {
+		}
+
+		&__link {
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 26px;
+      color: #000000;
+      text-decoration: none;
+
+		}
+
+		&__additional-menu {
+		}
+}
+
+
+
+.additional-menu {
+
+		&__button {
+
+		}
+
+		&__counter {
+		}
+}
+
+
+.main-page {
+}
+.main__promo{
+  background: #83B3D3 url('../assets/img/index-background.jpg');
+  height: 480px;
+}
+
+
+.advantages {
+  text-align: center;
+		&__title {
+      font-weight: 700;
+      font-size: 30px;
+      line-height: 36px;
+      text-transform: uppercase;
+      text-align: center;
+		}
+
+		&__text {
+      font-size: 22px;
+      line-height: 36px;
+      text-align: center;
+      color: #333333;
+		}
+
+		&__list {
+		}
+
+		&__item {
+        background-color: rgba(131, 179, 211, 0.12);
+		}
+    &__item:not(.advantages__item-large):nth-child(even) {
+        background-color: rgba(131, 179, 211, 0.2);
+		}
+
+
+
+
+		&__info {
+      color: #333333;
+      background-color: #ffffff;
+		}}
+
+.advantages__item-large {
+    color: #ffffff;
+    background-color: #83B3D3;}
+
+.advantages__item-large > .item__title {
+      color: #ffffff;
+    }
+.advantages__item-large > .item__text {
+      color: #ffffff;
+    }
+
+
+.item {
+
+		&__title {
+      text-align: center;
+      text-transform: uppercase;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 28px;
+      color: #000000;;
+		}
+
+		&__text {
+      text-align: center;
+      font-size: 18px;
+      line-height: 21px;
+      color: #333333;
+		}
+
+		&__img {
+
+		}
+}
+
+
+
+.info {
+
+
+		&__item {
+      background-color: rgba(131, 179, 211, 0.2);
+      text-align: center;
+	}
+    &__item:nth-child(2) {
+      background-color: rgba(131, 179, 211, 0.12);
+}
+		&__title {
+      color: #000000;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 28px;
+      text-transform: uppercase;
+		}
+
+		&__text {
+      font-size: 18px;
+      line-height: 21px;
+      color: #333333;
+
+		}
+}
+.seach {
+  text-align: center;
+		&__title {
+      font-weight: 700;
+      font-size: 30px;
+      line-height: 36px;
+      text-transform: uppercase;
+      color: #000000;
+		}
+
+		&__text {
+      color: #333333;
+      font-size: 22px;
+      line-height: 26px;
+    }
+
+		&__button {
+    border-radius: 10px;
+    }
+}
+.subscribe {
+ background: #83B3D3 url("../assets/img/background.jpg")   0% 0% / 100% auto no-repeat ;
+		&__title {
+      font-weight: 700;
+      font-size: 30px;
+      line-height: 36px;
+      text-align: center;
+      text-transform: uppercase;
+      color: #FFFFFF;
+		}
+
+		&__text {
+      font-size: 22px;
+      line-height: 26px;
+      text-align: center;
+      color: #FFFFFF;
+		}
+
+		&__form {
+      text-align: center;
+		}
+
+		&__email {
+      font-size: 18px;
+      line-height: 26px;
+      color: #000000;
+
+      align-items: center;
+		}
+
+		&__button {
+      background: #83B3D3;
+      border-radius: 0px 10px 10px 0px;
+      font-size: 20px;
+      line-height: 26px;
+}}
+.field {
+}
+
+.footer {
+
+
+		&__social {
+		}
+
+		&__tel {
+		}
+
+		&__phone {
+      font-size: 40px;
+      line-height: 40px;
+      text-align: center;
+      text-transform: uppercase;
+      color: #000000;
+		}
+
+		&__developer {
+		}
+}
+.social {
+
+		&__menu {
+		}
+
+		&__item {
+		}
+
+		&__link {
+		}
+}
+.developer {
+
+		&__logo {
+      
+		}
+}
+
+
+@import "_catalog";
+
