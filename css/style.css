@@ -69,7 +69,7 @@ a:hover {
   text-decoration: none;
 }
 
-ul li {
+ul, li {
   list-style: none;
 }
 
@@ -111,6 +111,7 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  background-color: #F2F2F2;
 }
 
 main {
@@ -120,15 +121,17 @@ main {
 .container {
   width: 1200px;
   margin: 0 auto;
+  background-color: #ffffff;
 }
 
 .footer-container {
   display: flex;
   justify-content: space-between;
-  padding: 0 72px;
+  padding: 40px 72px;
 }
 
 .button {
+  display: block;
   font-weight: 700;
   text-align: center;
   text-transform: uppercase;
@@ -137,37 +140,73 @@ main {
   border-radius: 4px;
 }
 
-.secondary-button {
-  font-size: 16px;
-  line-height: 20px;
-  width: 139px;
-  height: 70px;
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .header__nav {
   display: flex;
-  width: 1060px;
+  padding: 0 72px;
   margin: 0 auto;
   justify-content: space-between;
 }
 .header__logo {
   width: 139px;
   height: 70px;
+  display: flex;
+  text-align: center;
+}
+.header__menu {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: auto;
+  margin-left: 30px;
+  flex-grow: 1;
 }
 .header__link {
+  display: block;
+  padding: 20px 17px;
   font-weight: 700;
   font-size: 20px;
   line-height: 26px;
   color: #000000;
   text-decoration: none;
 }
+.header__additional-menu {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.additional-menu__button {
+  width: 42px;
+  height: 42px;
+}
+.secondary-button {
+  width: 160px;
+  height: 37px;
+  font-size: 16px;
+  line-height: 20px;
+  padding: 9px 15px;
+  margin-left: 20px;
+}
+
 .main__promo {
   background: #83B3D3 url("../assets/img/index-background.jpg");
-  height: 480px;
+  height: 485px;
+  margin-bottom: 63px;
 }
 
 .advantages {
   text-align: center;
+  margin-bottom: 80px;
 }
 .advantages__title {
   font-weight: 700;
@@ -175,12 +214,14 @@ main {
   line-height: 36px;
   text-transform: uppercase;
   text-align: center;
+  margin-bottom: 31px;
 }
 .advantages__text {
   font-size: 22px;
   line-height: 36px;
   text-align: center;
   color: #333333;
+  margin-bottom: 80px;
 }
 .advantages__item {
   background-color: rgba(131, 179, 211, 0.12);
@@ -249,14 +290,19 @@ main {
   line-height: 36px;
   text-transform: uppercase;
   color: #000000;
+  margin-bottom: 29px;
 }
 .seach__text {
   color: #333333;
   font-size: 22px;
   line-height: 26px;
+  margin-bottom: 56px;
 }
 .seach__button {
+  width: 575px;
+  padding: 15px 0;
   border-radius: 10px;
+  margin: 0 auto 93px;
 }
 
 .subscribe {
@@ -269,12 +315,15 @@ main {
   text-align: center;
   text-transform: uppercase;
   color: #FFFFFF;
+  padding-top: 94px;
+  margin-bottom: 29px;
 }
 .subscribe__text {
   font-size: 22px;
   line-height: 26px;
   text-align: center;
   color: #FFFFFF;
+  margin-bottom: 47px;
 }
 .subscribe__form {
   text-align: center;
@@ -286,10 +335,18 @@ main {
   align-items: center;
 }
 .subscribe__button {
+  height: 60px;
+  display: inline-block;
   background: #83B3D3;
   border-radius: 0px 10px 10px 0px;
   font-size: 20px;
   line-height: 26px;
+}
+
+.field {
+  width: 600px;
+  height: 60px;
+  margin-bottom: 94px;
 }
 
 .footer__phone {
@@ -299,6 +356,16 @@ main {
   text-transform: uppercase;
   color: #000000;
 }
+.social__menu {
+  display: flex;
+  margin-left: 30px;
+}
+.social__link {
+  width: 42px;
+  height: 42px;
+  display: block;
+}
+
 .container-catalog {
   background: #83B3D3 url("../assets/img/background.jpg") 0% 0%/100% auto no-repeat;
   height: 408px;
@@ -314,6 +381,9 @@ main {
   font-weight: 700;
   font-size: 60px;
   line-height: 78px;
+  padding-top: 35px;
+  margin-left: 71px;
+  margin-bottom: 71px;
 }
 .catalog__breadcrumbs {
   font-size: 16px;
@@ -392,9 +462,22 @@ main {
   text-transform: uppercase;
   color: #000000;
 }
+.gallery__view {
+  display: flex;
+  margin-right: 8px;
+  margin-left: auto;
+}
+.gallery__view:last-child {
+  margin-right: 0;
+}
+.gallery__card {
+  margin-bottom: 30px;
+}
 .select-container {
   display: flex;
   justify-content: space-between;
+  padding: 48px 0;
+  align-items: center;
 }
 
 .select__button {
@@ -406,6 +489,11 @@ main {
   font-size: 18px;
   line-height: 23px;
   color: #333333;
+  margin-right: auto;
+}
+.view__item {
+  width: 48px;
+  height: 48px;
 }
 .card__title {
   font-weight: 700;
@@ -423,6 +511,10 @@ main {
   font-size: 18px;
   line-height: 23px;
 }
+.description__button {
+  display: inline-block;
+}
+
 .pagination__nav {
   display: flex;
   justify-content: space-between;

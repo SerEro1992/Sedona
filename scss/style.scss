@@ -20,32 +20,37 @@
 body{
   font-family: "PT Sans", sans-serif;
   color: #000000;
+
 }
 
 .wrapper {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  background-color: #F2F2F2;
 
 }
 
 main {
   flex:1 1 auto;
 
+
 }
 
 .container {
   width: 1200px;
   margin:0 auto;
+  background-color: #ffffff;
 }
 .footer-container{
   display: flex;
   justify-content: space-between;
-  padding: 0 72px;
+  padding: 40px 72px;
 
 }
 
 .button {
+  display: block;
   font-weight: 700;
   text-align: center;
   text-transform: uppercase;
@@ -54,41 +59,57 @@ main {
   border-radius: 4px;
 }
 
-.secondary-button  {
-  font-size: 16px;
-  line-height: 20px;
-  width: 139px;
-  height: 70px;
-}
+
 
 .visually-hidden {
-//display: none;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .header {
 
 		&__nav {
       display: flex;
-      width: 1060px;
+      padding: 0 72px;
       margin: 0 auto;
       justify-content: space-between;
+
+
+
 		}
 
 		&__logo {
       width: 139px;
       height: 70px;
+      display: flex;
+      text-align: center;
+
 		}
 
 		&__menu {
+      display: flex;
+      flex-wrap:wrap;
+      margin-right: auto;
+      margin-left: 30px;
+      flex-grow: 1;
 		}
 
 		&__item {
+
 		}
 
 		&__item--active {
 		}
 
 		&__link {
+      display: block;
+      padding:20px 17px;
       font-weight: 700;
       font-size: 20px;
       line-height: 26px;
@@ -98,6 +119,9 @@ main {
 		}
 
 		&__additional-menu {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
 		}
 }
 
@@ -107,29 +131,47 @@ main {
 
 		&__button {
 
+      width: 42px;
+      height: 42px;
+
 		}
 
 		&__counter {
+
 		}
 }
+.secondary-button  {
+  width: 160px;
+  height: 37px;
+  font-size: 16px;
+  line-height: 20px;
+  padding: 9px 15px;
+  margin-left: 20px;
 
+
+}
 
 .main-page {
 }
 .main__promo{
   background: #83B3D3 url('../assets/img/index-background.jpg');
-  height: 480px;
+  height: 485px;
+  margin-bottom: 63px;
 }
 
 
 .advantages {
   text-align: center;
+  margin-bottom: 80px;
 		&__title {
+
       font-weight: 700;
       font-size: 30px;
       line-height: 36px;
       text-transform: uppercase;
       text-align: center;
+      margin-bottom: 31px;
+
 		}
 
 		&__text {
@@ -137,6 +179,7 @@ main {
       line-height: 36px;
       text-align: center;
       color: #333333;
+      margin-bottom: 80px;
 		}
 
 		&__list {
@@ -227,20 +270,26 @@ main {
       line-height: 36px;
       text-transform: uppercase;
       color: #000000;
+      margin-bottom: 29px;
 		}
 
 		&__text {
       color: #333333;
       font-size: 22px;
       line-height: 26px;
+      margin-bottom: 56px;
     }
 
 		&__button {
+    width: 575px;
+    padding: 15px 0;
     border-radius: 10px;
+    margin: 0 auto 93px;
     }
 }
 .subscribe {
  background: #83B3D3 url("../assets/img/background.jpg")   0% 0% / 100% auto no-repeat ;
+
 		&__title {
       font-weight: 700;
       font-size: 30px;
@@ -248,6 +297,8 @@ main {
       text-align: center;
       text-transform: uppercase;
       color: #FFFFFF;
+      padding-top: 94px;
+      margin-bottom: 29px;
 		}
 
 		&__text {
@@ -255,27 +306,37 @@ main {
       line-height: 26px;
       text-align: center;
       color: #FFFFFF;
+      margin-bottom: 47px;
 		}
 
 		&__form {
       text-align: center;
+
+
 		}
 
 		&__email {
       font-size: 18px;
       line-height: 26px;
       color: #000000;
-
       align-items: center;
+
 		}
 
 		&__button {
+      height: 60px;
+      display: inline-block;
       background: #83B3D3;
       border-radius: 0px 10px 10px 0px;
       font-size: 20px;
       line-height: 26px;
+
 }}
 .field {
+  width: 600px;
+  height: 60px;
+  margin-bottom: 94px;
+
 }
 
 .footer {
@@ -301,18 +362,25 @@ main {
 .social {
 
 		&__menu {
+      display: flex;
+      margin-left: 30px;
 		}
 
 		&__item {
+
 		}
 
 		&__link {
+      width: 42px;
+      height: 42px;
+      display: block;
+
 		}
 }
 .developer {
 
 		&__logo {
-      
+
 		}
 }
 

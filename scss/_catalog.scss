@@ -15,6 +15,9 @@ padding: 0 72px;
     font-weight: 700;
     font-size: 60px;
     line-height: 78px;
+    padding-top: 35px;
+    margin-left: 71px;
+    margin-bottom: 71px;
   }
   &__breadcrumbs {
     font-size: 16px;
@@ -156,12 +159,22 @@ border-radius: 4px;
     text-transform: uppercase;
     color: #000000;
 
+
   }
 
   &__view {
+    display: flex;
+    margin-right: 8px;
+    margin-left: auto;
+
+  }
+  &__view:last-child {
+    margin-right: 0;
   }
 
   &__card {
+   margin-bottom: 30px;
+
   }
 
   &__pagination {
@@ -171,9 +184,11 @@ border-radius: 4px;
 .select-container{
   display: flex;
   justify-content: space-between;
+  padding: 48px 0;
+  align-items: center;
+
 }
 .select {
-
   &__button {
     font-size: 18px;
     line-height: 23px;
@@ -184,12 +199,10 @@ border-radius: 4px;
     font-size: 18px;
     line-height: 23px;
     color: #333333;
+    margin-right: auto;
   }
 
   &__item {
-
-
-
   }
 
   &__item--active {
@@ -203,11 +216,16 @@ border-radius: 4px;
 .view {
 
   &__item {
+    width: 48px;
+    height: 48px;
   }
 
   &__link {
   }
 }
+
+
+
 .card {
 
   &__title {
@@ -217,6 +235,7 @@ border-radius: 4px;
   }
 
   &__img {
+
   }
 
   &__description {
@@ -243,6 +262,7 @@ border-radius: 4px;
 
 
   &__button {
+    display: inline-block;
   }
 }
 .star-four {
