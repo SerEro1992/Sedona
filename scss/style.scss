@@ -42,12 +42,7 @@ main {
   margin:0 auto;
   background-color: #ffffff;
 }
-.footer-container{
-  display: flex;
-  justify-content: space-between;
-  padding: 40px 72px;
 
-}
 
 .button {
   display: block;
@@ -73,30 +68,27 @@ main {
 }
 
 .header {
-
 		&__nav {
-      display: flex;
+      display: grid;
+      grid-template-columns: max-content 1fr max-content;
+      gap: 30px;
       padding: 0 72px;
-      margin: 0 auto;
-      justify-content: space-between;
-
+      min-height: 65px;
 
 
 		}
-
 		&__logo {
-      width: 139px;
-      height: 70px;
-      display: flex;
-      text-align: center;
-
+      position: relative;
+      z-index: 1;
+      margin-bottom: -10px;
+		}
+    &__logo img{
+      display: block;
 		}
 
 		&__menu {
       display: flex;
       flex-wrap:wrap;
-      margin-right: auto;
-      margin-left: 30px;
       flex-grow: 1;
 		}
 
@@ -109,7 +101,7 @@ main {
 
 		&__link {
       display: block;
-      padding:20px 17px;
+      padding:19.5px 17px;
       font-weight: 700;
       font-size: 20px;
       line-height: 26px;
@@ -125,10 +117,7 @@ main {
 		}
 }
 
-
-
 .additional-menu {
-
 		&__button {
 
       width: 42px;
@@ -147,69 +136,103 @@ main {
   line-height: 20px;
   padding: 9px 15px;
   margin-left: 20px;
-
-
 }
+
+
+
+
 
 .main-page {
 }
 .main__promo{
   background: #83B3D3 url('../assets/img/index-background.jpg');
   height: 485px;
-  margin-bottom: 63px;
-}
+ }
 
 
 .advantages {
-  text-align: center;
   margin-bottom: 80px;
-		&__title {
 
+    &__content{
+      padding: 62px 240px 80px;
+    }
+		&__title {
       font-weight: 700;
       font-size: 30px;
       line-height: 36px;
       text-transform: uppercase;
       text-align: center;
       margin-bottom: 31px;
-
-		}
-
+    }
 		&__text {
       font-size: 22px;
       line-height: 36px;
       text-align: center;
       color: #333333;
-      margin-bottom: 80px;
-		}
+    }
+
+
 
 		&__list {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
 		}
+    &__discription{
+      padding: 60px;
+
+    }
+    &__img{
+
+
+    }
+
+
+
 
 		&__item {
+
         background-color: rgba(131, 179, 211, 0.12);
+
 		}
     &__item:not(.advantages__item-large):nth-child(even) {
         background-color: rgba(131, 179, 211, 0.2);
+
 		}
-
-
-
+    &__item:not(.advantages__item-large){
+      padding: 60px;
+    }
 
 		&__info {
       color: #333333;
       background-color: #ffffff;
+      display: grid;
+      grid-column: 1 / -1;
+      grid-template-columns: repeat(3, 1fr);
+
 		}}
+
+
+
 
 .advantages__item-large {
     color: #ffffff;
-    background-color: #83B3D3;}
+    background-color: #83B3D3;
+    display: grid;
+    grid-column: 1 / -1;
+    grid-template-columns: repeat(3, 1fr);
+    }
 
-.advantages__item-large > .item__title {
-      color: #ffffff;
-    }
-.advantages__item-large > .item__text {
-      color: #ffffff;
-    }
+
+
+
+  .advantages__discription > .item__title {
+    color: #ffffff;
+  }
+
+  .advantages__discription > .item__text {
+    color: #ffffff;
+  }
+
 
 
 .item {
@@ -220,7 +243,8 @@ main {
       font-weight: 700;
       font-size: 24px;
       line-height: 28px;
-      color: #000000;;
+      color: #000000;
+      margin: 24px 0;
 		}
 
 		&__text {
@@ -228,9 +252,16 @@ main {
       font-size: 18px;
       line-height: 21px;
       color: #333333;
+      margin: 18px 0;
 		}
 
 		&__img {
+      grid-column: span 2;
+      width: 100%;
+      height: 0;
+      min-height: 100%;
+      object-fit: cover;
+
 
 		}
 }
@@ -238,11 +269,10 @@ main {
 
 
 .info {
-
-
-		&__item {
+    	&__item {
       background-color: rgba(131, 179, 211, 0.2);
       text-align: center;
+      padding: 60px;
 	}
     &__item:nth-child(2) {
       background-color: rgba(131, 179, 211, 0.12);
@@ -253,15 +283,19 @@ main {
       font-size: 24px;
       line-height: 28px;
       text-transform: uppercase;
+      margin: 28px 0;
 		}
 
 		&__text {
       font-size: 18px;
       line-height: 21px;
       color: #333333;
-
-		}
+      margin: 18px 0;
 }
+}
+
+
+
 .seach {
   text-align: center;
 		&__title {
@@ -339,10 +373,21 @@ main {
 
 }
 
+
+
+
+.footer-container{
+  display: grid;
+  grid-template-columns: 1fr max-content 1fr;
+  padding: 40px 72px;
+  gap:30px;
+
+}
+
 .footer {
 
-
 		&__social {
+
 		}
 
 		&__tel {
@@ -357,13 +402,14 @@ main {
 		}
 
 		&__developer {
+      justify-self: end;
 		}
 }
 .social {
 
 		&__menu {
       display: flex;
-      margin-left: 30px;
+
 		}
 
 		&__item {
