@@ -77,12 +77,10 @@ padding: 0 72px;
   }
 
   &__button {
-<<<<<<< HEAD
 	display: flex;
 	flex-direction: column;
 	margin-left: 80px;
-=======
->>>>>>> ad6d596f3d8491a0d919dd81b8af05118f1a9b0c
+
   }
 }
 
@@ -92,7 +90,6 @@ font-size: 16px;
 line-height: 21px;
 background: #83B3D3;
 border-radius: 4px;
-<<<<<<< HEAD
 margin-bottom: 20px;
 }
 
@@ -102,15 +99,6 @@ margin-bottom: 20px;
 	background-color: transparent;
 	font-family: inherit;
 	font-size: 18px;
-=======
-}
-
-.reset-button {
-  background-color: transparent;
-  font-family: inherit;
-  font-size: 18px;
->>>>>>> ad6d596f3d8491a0d919dd81b8af05118f1a9b0c
-
 }
 
 
@@ -156,11 +144,6 @@ border-radius: 4px;
   border-radius: 4px;
 }
 
-
-
-
-
-
 .gallery__box{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -202,15 +185,9 @@ border-radius: 4px;
     display: flex;
     flex-direction: column;
     align-items: center;
-<<<<<<< HEAD
     padding: 30px 0 73px 0;
-
-=======
-    padding: 30px 0;
->>>>>>> ad6d596f3d8491a0d919dd81b8af05118f1a9b0c
   }
 }
-
 
 
 .select-container{
@@ -395,55 +372,17 @@ border-radius: 4px;
 
 
 
-<<<<<<< HEAD
+
 .subscribe-catalog {
 	background: #fff;
   &__title {
-
       color: #000;
-
   }
 
   &__text {
-	
       color: #000;
-
   }
-
-  &__form {
-
+  &__email{
+    
   }
-  &__email {
-
-	  }
-
-  &__field {
-
-=======
-.subscribe {
-
-  &__title {
-  }
-
-  &__text {
-  }
-
-  &__form {
-  }
-
-  &__field {
->>>>>>> ad6d596f3d8491a0d919dd81b8af05118f1a9b0c
-  }
-
-  &__input {
-  }
-
-  &__button {
-<<<<<<< HEAD
-
-=======
->>>>>>> ad6d596f3d8491a0d919dd81b8af05118f1a9b0c
-  }
-}
-.field {
 }
